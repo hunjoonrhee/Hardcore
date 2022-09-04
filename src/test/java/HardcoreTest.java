@@ -4,25 +4,25 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class HardcoreTest {
     @Test
-    void convert2RomanNumeralsTestFor1(){
+    void convert2RomanNumeralsFor3(){
         //GIVEN
-        int n = 1;
+        int n = 3;
         //WHEN
         String actual = Hardcore.convert2RomanNumerals(n);
         //THEN
-        assertEquals("I", actual);
+        assertEquals("III", actual);
     }
     @Test
-    void convert2RomanNumeralsTestFor5(){
+    void convert2RomanNumeralsFor8(){
         //GIVEN
-        int n = 5;
+        int n = 8;
         //WHEN
         String actual = Hardcore.convert2RomanNumerals(n);
         //THEN
-        assertEquals("V", actual);
+        assertEquals("VIII", actual);
     }
     @Test
-    void convert2RomanNumeralsTestFor10(){
+    void convert2RomanNumeralsFor10(){
         //GIVEN
         int n = 10;
         //WHEN
@@ -31,16 +31,44 @@ public class HardcoreTest {
         assertEquals("X", actual);
     }
     @Test
-    void convert2RomanNumeralsTestFor30(){
+    void convert2RomanNumeralsFor11(){
         //GIVEN
-        int n = 30;
+        int n = 11;
         //WHEN
         String actual = Hardcore.convert2RomanNumerals(n);
         //THEN
-        assertEquals("XXX", actual);
+        assertEquals("XI", actual);
     }
     @Test
-    void convert2RomanNumeralsTestFor50(){
+    void convert2RomanNumeralsFor12(){
+        //GIVEN
+        int n = 12;
+        //WHEN
+        String actual = Hardcore.convert2RomanNumerals(n);
+        //THEN
+        assertEquals("XII", actual);
+    }
+    @Test
+    void convert2RomanNumeralsFor18(){
+        //GIVEN
+        int n = 18;
+        //WHEN
+        String actual = Hardcore.convert2RomanNumerals(n);
+        //THEN
+        assertEquals("XVIII", actual);
+    }
+    @Test
+    void convert2RomanNumeralsFor20(){
+        //GIVEN
+        int n = 20;
+        //WHEN
+        String actual = Hardcore.convert2RomanNumerals(n);
+        //THEN
+        assertEquals("XX", actual);
+    }
+
+    @Test
+    void convert2RomanNumeralsFor50(){
         //GIVEN
         int n = 50;
         //WHEN
@@ -49,120 +77,68 @@ public class HardcoreTest {
         assertEquals("L", actual);
     }
     @Test
-    void convert2RomanNumeralsTestFor100(){
+    void convert2RomanNumeralsFor59(){
+        //GIVEN
+        int n = 59;
+        //WHEN
+        String actual = Hardcore.convert2RomanNumerals(n);
+        //THEN
+        assertEquals("LIX", actual);
+    }
+    @Test
+    void convert2RomanNumeralsFor55(){
+        //GIVEN
+        int n = 55;
+        //WHEN
+        String actual = Hardcore.convert2RomanNumerals(n);
+        //THEN
+        assertEquals("LV", actual);
+    }
+    @Test
+    void convert2RomanNumeralsFor80(){
+        //GIVEN
+        int n = 80;
+        //WHEN
+        String actual = Hardcore.convert2RomanNumerals(n);
+        //THEN
+        assertEquals("LXXX", actual);
+    }
+
+    @Test
+    void convert2RomanNumeralsFor85(){
+        //GIVEN
+        int n = 85;
+        //WHEN
+        String actual = Hardcore.convert2RomanNumerals(n);
+        //THEN
+        assertEquals("LXXXV", actual);
+    }
+
+    @Test
+    void convert2RomanNumeralsFor90(){
+        //GIVEN
+        int n = 90;
+        //WHEN
+        String actual = Hardcore.convert2RomanNumerals(n);
+        //THEN
+        assertEquals("XC", actual);
+    }
+    @Test
+    void convert2RomanNumeralsFor97(){
+        //GIVEN
+        int n = 97;
+        //WHEN
+        String actual = Hardcore.convert2RomanNumerals(n);
+        //THEN
+        assertEquals("XCVII", actual);
+    }
+    @Test
+    void convert2RomanNumeralsFor100(){
         //GIVEN
         int n = 100;
         //WHEN
         String actual = Hardcore.convert2RomanNumerals(n);
         //THEN
         assertEquals("C", actual);
-    }
-    @Test
-    void plusTestFor2(){
-        //GIVEN
-        int n = 2;
-        //WHEN
-        String actual = Hardcore.plus(n);
-        //THEN
-        assertEquals("II", actual);
-    }
-    @Test
-    void plusTestFor3(){
-        //GIVEN
-        int n = 3;
-        //WHEN
-        String actual = Hardcore.plus(n);
-        //THEN
-        assertEquals("III", actual);
-    }
-    @Test
-    void plusTestFor6(){
-        //GIVEN
-        int n = 6;
-        //WHEN
-        String actual = Hardcore.plus(n);
-        //THEN
-        assertEquals("VI", actual);
-    }
-    @Test
-    void plusTestFor7(){
-        //GIVEN
-        int n = 7;
-        //WHEN
-        String actual = Hardcore.plus(n);
-        //THEN
-        assertEquals("VII", actual);
-    }
-    @Test
-    void plusTestFor8(){
-        //GIVEN
-        int n = 8;
-        //WHEN
-        String actual = Hardcore.plus(n);
-        //THEN
-        assertEquals("VIII", actual);
-    }
-    @Test
-    void plusTestFor10(){
-        //GIVEN
-        int n = 10;
-        //WHEN
-        String actual = Hardcore.plus(n);
-        //THEN
-        assertEquals("X", actual);
-    }
-    @Test
-    void plusTestFor11(){
-        //GIVEN
-        int n = 11;
-        //WHEN
-        String actual = Hardcore.plus(n);
-        //THEN
-        assertEquals("XI", actual);
-    }
-    @Test
-    void plusTestFor12(){
-        //GIVEN
-        int n = 12;
-        //WHEN
-        String actual = Hardcore.plus(n);
-        //THEN
-        assertEquals("XII", actual);
-    }
-    @Test
-    void plusTestFor13(){
-        //GIVEN
-        int n = 13;
-        //WHEN
-        String actual = Hardcore.plus(n);
-        //THEN
-        assertEquals("XIII", actual);
-    }
-    @Test
-    void plusTestFor16(){
-        //GIVEN
-        int n = 16;
-        //WHEN
-        String actual = Hardcore.plus(n);
-        //THEN
-        assertEquals("XVI", actual);
-    }
-    @Test
-    void plusTestFor17(){
-        //GIVEN
-        int n = 17;
-        //WHEN
-        String actual = Hardcore.plus(n);
-        //THEN
-        assertEquals("XVII", actual);
-    }
-    @Test
-    void plusTestFor18(){
-        //GIVEN
-        int n = 18;
-        //WHEN
-        String actual = Hardcore.plus(n);
-        //THEN
-        assertEquals("XVIII", actual);
     }
 }
